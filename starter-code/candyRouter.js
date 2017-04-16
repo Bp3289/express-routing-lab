@@ -22,6 +22,10 @@ router.get('/candies', function(req,res) {
 	res.json(candies);
 });
 
+router.get('/candies/:id', function(req, res) {
+	res.json(candies[req.params.id-1]);
+});
+
 // Fill out the rest of the routes here
 
 module.exports = router;
