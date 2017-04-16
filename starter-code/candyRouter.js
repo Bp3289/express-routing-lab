@@ -2,7 +2,13 @@ var express = require('express');
 var bodyParser = require('body-parser');
 router = express.Router();
 
-var candies;
+var candies = [
+{"id":1,"name":"Chewing Gum","color":"Red"},
+{"id":2,"name":"Pez","color":"Green"},
+{"id":3,"name":"Marshmallow","color":"Pink"},
+{"id":4,"name":"Candy Stick","color":"Blue"}
+
+];
 
 //What would need to go into candies
 //in order to pass our first test?
