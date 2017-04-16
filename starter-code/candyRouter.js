@@ -13,7 +13,10 @@ var candies = [
 //What would need to go into candies
 //in order to pass our first test?
 
-router.get('/', function(req,res) {
+
+
+
+router.get('/candies', function(req,res) {
 	// What would go here? 
 	// Hint: we want all candies in JSON format
 	res.json(candies);
