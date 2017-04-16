@@ -26,6 +26,12 @@ router.get('/candies/:id', function(req, res) {
 	res.json(candies[req.params.id-1]);
 });
 
+
+router.post('/candies', function(req, res){
+	candies.push(req.body);
+	res.json(req.body);
+});
+
 // Fill out the rest of the routes here
 
 module.exports = router;
