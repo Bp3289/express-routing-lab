@@ -16,6 +16,7 @@ var candies = [
 router.get('/', function(req,res) {
 	// What would go here? 
 	// Hint: we want all candies in JSON format
+	res.json(candies);
 });
 
 // Fill out the rest of the routes here
