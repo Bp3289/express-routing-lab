@@ -32,6 +32,20 @@ router.post('/candies', function(req, res){
 	res.json(req.body);
 });
 
+router.put('/candies/:id', function(req, res){
+	//find the correct candy (given the id they give us)
+	candies[req.params.id-1] = req.body;
+
+	res.json(req.body);
+
+});
+
+router.delete('/candies/:id', function(req, res){
+	delete candies[req.params.id-1];
+
+	res.json({message: "deleted"});
+});
+
 // Fill out the rest of the routes here
 
 module.exports = router;
